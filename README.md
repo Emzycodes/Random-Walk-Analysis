@@ -26,3 +26,7 @@ The Random Walk Generator is a Python project that generates and visualizes rand
    ``` bash
    cd random-walk-generator
 
+3. **Install Dependecies**
+   ``` bash
+   pip install -r requirements.txt
+
