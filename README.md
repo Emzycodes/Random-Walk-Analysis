@@ -28,5 +28,12 @@ The Random Walk Generator is a Python project that generates and visualizes rand
 
 3. **Install Dependecies**
    ``` bash
-   pip install -r requirements.txt
+   pip install matplotlib
+
+## Usage
+
+**Run the script using the following command:**
+``` bash
+python main.py
+
 
