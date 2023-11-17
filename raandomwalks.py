@@ -32,5 +32,7 @@ class RandomWalks:
 
             self.x_values.append(x)
             self.y_values.append(y)
-
+rw = RandomWalks()
+rw.fill_walk()
+print(rw.x_values)
         
