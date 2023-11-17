@@ -23,5 +23,6 @@ The Random Walk Generator is a Python project that generates and visualizes rand
    git clone https://github.com/Emzycodes/random-walk-generator.git
 
 2. **Navigate to the project directory**
-   
+   ``` bash
+   cd random-walk-generator
 
