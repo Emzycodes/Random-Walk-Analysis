@@ -10,11 +10,24 @@ def run_visual():
         rw.fill_walk()
 
         # Plot the points in the walk.
+        #############################
         plt.style.use('classic')
         fig, ax = plt.subplots()
-        ax.scatter(rw.x_values, rw.y_values, s=15)
-        plt.savefig("img.png", bbox_inches='tight')
-        plt.show()
+        point_numbers = range(rw.points)
+        ax.scatter(rw.x_values, rw.y_values,c=point_numbers,cmap=plt.cm.Blues,
+                   edgecolors='none', s=1)
+
+        # Emphasize the first and the last points.
+        ax.scatter(0,0, c= 'green', s=100,edgecolors='none')
+        ax.scatter(rw.x_values[-1],rw.y_values[-1],c= 'red', s= 100)
+
+        # Remove the axis
+        ax.get_xaxis().set_visible(False)
+        ax.get_yaxis().set_visible(False)
+
+        # Save the image and display
+        plt.savefig("img.png", bbox_inches='tight') #saves the image as img.png
+        plt.show() # display thr plot
 
         restart = input("Do you want to run the analysis again? (y/n): ").lower()
 
