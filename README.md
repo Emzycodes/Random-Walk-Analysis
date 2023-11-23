@@ -1,6 +1,6 @@
 # Random Walk Generator
 
-![Random Walk](img.png)
+
 
 ## Overview
 
